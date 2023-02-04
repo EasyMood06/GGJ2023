@@ -68,4 +68,11 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].enabled = false;
         }
     }
+
+    public void ChangeHealth(int h, int numberOfHearts)
+    {
+        health += h;
+        numOfHearts += numberOfHearts;
+        UpdateHealthUI();
+    }
 }

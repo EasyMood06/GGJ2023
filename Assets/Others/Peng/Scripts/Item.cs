@@ -9,18 +9,13 @@ public class Item : MonoBehaviour
     public Sprite icon;
     public int Rarity;
     public bool isActive;
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isActive)
-            OnEquip();
-    }
+    public PlayerController playerController;
 
     //Initialize Item variables
     public virtual void OnGet()
     {
         Debug.Log("I get" + itemName);
+        playerController = GetComponent<PlayerController>();
     }
     //Update Item Effect
     public virtual void OnEquip()

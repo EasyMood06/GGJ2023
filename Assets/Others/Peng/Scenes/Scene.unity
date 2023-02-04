@@ -330,7 +330,7 @@ MonoBehaviour:
   maximumDampingRatio: 0.5
   maximumVelocity: 10
   launchable: 1
-  launchVelocity: 3
+  launchVelocity: 10
   isInSpaceship: 0
 --- !u!114 &131124781
 MonoBehaviour:
@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe152fca9416b24cbf9cf2812246119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  numOfHearts: 10
+  health: 1
+  numOfHearts: 1
   hearts:
   - {fileID: 1406128012}
   - {fileID: 956399565}
@@ -385,14 +385,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 131124775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b1ab2671cbf374a9917000c96c57e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 65ab98bbf848d5e458614e3135906f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: TestItem
-  description: 
-  icon: {fileID: 0}
-  Rarity: 0
-  isActive: 0
+  maxCharge: 10
+  currentCharge: 1
+  chargeRecoverSpeed: 0.1
+  isFull: 0
 --- !u!1 &220300368
 GameObject:
   m_ObjectHideFlags: 0
