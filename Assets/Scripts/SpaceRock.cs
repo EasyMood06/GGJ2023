@@ -4,17 +4,42 @@ using UnityEngine;
 
 public class SpaceRock : MonoBehaviour
 {
-    Vector2 force = new Vector2(0,1000);
+    int massCoefficient = 50;
+    int forceCoefficient = 50;
+    Vector2 unitDirection;
+    float force;
+    int randRorce;
+    float randSize;
+    int randDirection;
+    Rigidbody2D rb2D;
+
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
-        rigidbody2D.AddForce(force);
+        rb2D = GetComponent<Rigidbody2D>();
+        RandomGeneration();
+        RockInitialization();
     }
 
-    // Update is called once per frame
-    void Update()
+    void RandomGeneration()
     {
-        
+        randRorce = Random.Range(1, 5);
+        randSize = Random.Range(0.3f, 3.0f);
+        randDirection = Random.Range(0, 360);
+        print(randDirection + " " + randRorce + " " + randSize);
+    }
+
+    void RockInitialization()
+    {
+        // size Transform.scale = random_size
+        transform.localScale = new Vector3(randSize, randSize, randSize);
+        // weight Rigidbody2D.Mass = rand_size * mass_coefficient
+        rb2D.mass = randSize * massCoefficient;
+        // force = mass * random_force * force_coefficient;
+        force = rb2D.mass * randRorce * forceCoefficient;
+        // direction = new Vector2(cos(rand_direction), sin(rand_direction))
+        unitDirection = new Vector2(Mathf.Cos(randDirection), Mathf.Sin(randDirection));
+        // add force to rigidbody
+        rb2D.AddForce(force * unitDirection);
     }
 }
