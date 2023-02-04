@@ -155,12 +155,15 @@ MonoBehaviour:
   itemList: {fileID: 11400000, guid: dcd081d89035605408f76fd03bfc67d8, type: 2}
   itemPrefabsLevel1: []
   itemNamesLevel1: []
+  itemInfoLevel1: []
   itemImagesLevel1: []
   itemPrefabsLevel2: []
   itemNamesLevel2: []
+  itemInfoLevel2: []
   itemImagesLevel2: []
   itemPrefabsLevel3: []
   itemNamesLevel3: []
+  itemInfoLevel3: []
   itemImagesLevel3: []
 --- !u!4 &65106002
 Transform:
@@ -193,6 +196,7 @@ GameObject:
   - component: {fileID: 131124782}
   - component: {fileID: 131124781}
   - component: {fileID: 131124783}
+  - component: {fileID: 131124784}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -392,6 +396,18 @@ MonoBehaviour:
   currentCharge: 1
   chargeRecoverSpeed: 0.1
   isFull: 0
+--- !u!114 &131124784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131124775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50c26a10a29dc24b971329599e1d9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &220300368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,6 +2203,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  itemInfo: []
   itemImages:
   - {fileID: 0}
   - {fileID: 0}
@@ -5757,14 +5774,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 533839785}
+  player: {fileID: 0}
   ItemUI: {fileID: 1946794295}
   itemName1: {fileID: 813970191}
+  itemInfo1: {fileID: 0}
   itemImage1: {fileID: 2145900714}
   itemBtn1: {fileID: 220300368}
   itemName2: {fileID: 1640659946}
+  itemInfo2: {fileID: 0}
   itemImage2: {fileID: 609849942}
   itemBtn2: {fileID: 1848519317}
   itemName3: {fileID: 386550684}
+  itemInfo3: {fileID: 0}
   itemImage3: {fileID: 378564254}
   itemBtn3: {fileID: 1255716464}
 --- !u!4 &2134203002

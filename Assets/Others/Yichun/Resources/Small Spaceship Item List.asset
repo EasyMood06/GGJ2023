@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Small Spaceship Item List
   m_EditorClassIdentifier: 
   itemPrefabsLevel1:
-  - {fileID: 1029557950162494070, guid: 135be40bd8c6da549ad17af22ad83e67, type: 3}
+  - {fileID: 1029557950162494070, guid: a4314b3f89ed65c4cabb5c93b05c4392, type: 3}
   - {fileID: 1029557950162494070, guid: 1b6d5836fb5cc2c4e9d06c336c9c730c, type: 3}
   - {fileID: 1029557950162494070, guid: 0bdbcf4c15e6b32489e13b77d26f285b, type: 3}
   itemNamesLevel1:
