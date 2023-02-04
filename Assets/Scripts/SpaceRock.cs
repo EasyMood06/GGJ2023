@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpaceRock : MonoBehaviour
 {
     int massCoefficient = 50;
-    int forceCoefficient = 50;
+    int forceCoefficient = 15;
     Vector2 unitDirection;
     float force;
     int randRorce;
@@ -26,7 +26,6 @@ public class SpaceRock : MonoBehaviour
         randRorce = Random.Range(1, 5);
         randSize = Random.Range(0.3f, 3.0f);
         randDirection = Random.Range(0, 360);
-        print(randDirection + " " + randRorce + " " + randSize);
     }
 
     void RockInitialization()
