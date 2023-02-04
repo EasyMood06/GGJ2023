@@ -24,7 +24,7 @@ public class SpaceRock : MonoBehaviour
     void RandomGeneration()
     {
         randRorce = Random.Range(1, 5);
-        randSize = Random.Range(0.3f, 3.0f);
+        randSize = Random.Range(0.3f, 2.0f);
         randDirection = Random.Range(0, 360);
     }
 

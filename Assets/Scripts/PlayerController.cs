@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    float maxDistance = 10;
+    public float maxDistance = 10;
     float currentDistance = 0;
-    float hookFlyingSpeed = 8.0f;
+    public float hookFlyingSpeed = 8.0f;    // hook's speed of shooting
+    public float hookReturningSpeed = 8.0f; // hook's speed of returning back to the player
+    public float hookShrinkingSpeed = 8.0f; // hook's speed of shrinking when hooked to a target
+    public float dampingRatioIncreasingSpeed = 0.5f;    // hook's damping ratio increasing ratio
+    public float maximumDampingRatio = 0.5f;    // hook's max damping ratio
     Vector3 targetPosition;
     Vector3 targetUnitDirection;
     Vector3 drawPosition;
@@ -36,6 +40,17 @@ public class PlayerController : MonoBehaviour
         ShootLogicUpdate();
         playerLine.DrawLine(drawPosition);
     }
+    void DampingRatioReturn()
+    {
+        if (springJoint2D.dampingRatio < maximumDampingRatio)
+        {
+            springJoint2D.dampingRatio += Time.deltaTime * dampingRatioIncreasingSpeed;
+        }
+        else
+        {
+            springJoint2D.dampingRatio = maximumDampingRatio;
+        }
+    }
 
     //check if drawPosition is in range a rock
     void CheckCollisionWithRocks()
@@ -51,8 +66,9 @@ public class PlayerController : MonoBehaviour
             {
                 isOnTarget = true;
                 targetRock = currentRock;
+                springJoint2D.dampingRatio = 0f;
                 springJoint2D.connectedBody = targetRock.GetComponent<Rigidbody2D>();
-                springJoint2D.distance = Vector3.Distance(transform.position, drawPosition);
+                springJoint2D.distance = Vector3.Distance(transform.position, drawPosition) + currentRock.transform.localScale.x * currentRock.GetComponent<CircleCollider2D>().radius*.5f;
                 return;
             }
         }
@@ -63,7 +79,7 @@ public class PlayerController : MonoBehaviour
         if(isHookBacking)   // hook is backing to player
         {
             Vector3 backUnitVector = Vector3.Normalize(transform.position - drawPosition);
-            drawPosition += backUnitVector * hookFlyingSpeed * Time.deltaTime;
+            drawPosition += backUnitVector * hookReturningSpeed * Time.deltaTime;
             float dist = Vector3.Distance(drawPosition, transform.position);
             if(dist <= 1)       // the distance when player can get hook back
             {
@@ -108,12 +124,13 @@ public class PlayerController : MonoBehaviour
             if(isOnTarget)      // hook is on target, player can call back hook
             {
                 drawPosition = targetRock.transform.position;
+                DampingRatioReturn();
                 if(Input.GetMouseButtonUp(1))                 // loose the hook
                 {
                     LooseConnection();
                 }else if(Input.GetMouseButton(0))       // drag player to the target
                 {
-                    springJoint2D.distance -= Time.deltaTime * hookFlyingSpeed / 2;
+                    springJoint2D.distance -= Time.deltaTime * hookShrinkingSpeed;
                     if(springJoint2D.distance <= 1)         // loose the hook
                     {
                         LooseConnection();
