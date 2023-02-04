@@ -16,12 +16,16 @@ public class SmallSpaceship : MonoBehaviour
 
     public SpaceshipManager spaceshipManager;
     public UIManager uiManager;
+    public float isInSpaceshipCD = 2f;
+
     private bool isInSpaceship;
-    private bool throwed;
+    private float initIsInSpaceshipCD = 2f;
     private Rigidbody2D playerRB;
     private void Start()
     {
         isInSpaceship = false;
+        isInSpaceshipCD = 2f;
+        initIsInSpaceshipCD = isInSpaceshipCD;
         spaceshipManager = FindObjectOfType<SpaceshipManager>();
         uiManager = FindObjectOfType<UIManager>();
 
@@ -35,15 +39,28 @@ public class SmallSpaceship : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void Update()
+    {
+        if (isInSpaceship)
+        {
+            isInSpaceshipCD -= Time.deltaTime;
+            if (isInSpaceshipCD <= 0)
+            {
+                isInSpaceshipCD = initIsInSpaceshipCD;
+                isInSpaceship = false;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (isInSpaceship) return; //每次进入只触发一次菜单
-        if (collision.gameObject.GetComponent<PlayerController>()) //player来到这个小太空舱
+        if (collision.collider.gameObject.GetComponent<PlayerController>()) //player来到这个小太空舱
         {
             GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
             isInSpaceship = true;
-            playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
-            collision.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
+            playerRB = collision.collider.gameObject.GetComponent<Rigidbody2D>();
+            collision.collider.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
             // UI binding
             uiManager.UpdateItemUI(this);
             Debug.LogError("Enter spaceship");
@@ -52,9 +69,9 @@ public class SmallSpaceship : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        isInSpaceship = false;
+        
     }
 
     public void ThrowPlayerAway()

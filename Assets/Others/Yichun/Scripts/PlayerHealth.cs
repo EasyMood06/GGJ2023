@@ -35,13 +35,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.LogError("Hit " + collision.name);
+        Debug.LogError("Hit " + collision.collider.name);
         if (isInHitCD) return; //伤害结算CD中玩家不受伤
-        if (collision.gameObject.GetComponent<Enemy>())
+        if (collision.collider.gameObject.GetComponent<Enemy>())
         {
-            health -= collision.gameObject.GetComponent<Enemy>().enemyHit;
+            health -= collision.collider.gameObject.GetComponent<Enemy>().enemyHit;
             isInHitCD = true;
             UpdateHealthUI();
         }
