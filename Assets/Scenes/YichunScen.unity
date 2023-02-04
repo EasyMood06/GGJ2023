@@ -321,6 +321,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d9fa57e2b5bb24fbc6b6c9bad94992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistance: 20
+  hookFlyingSpeed: 60
+  hookReturningSpeed: 120
+  hookShrinkingSpeed: 15
+  dampingRatioIncreasingSpeed: 0.5
+  maximumDampingRatio: 0.5
+  maximumVelocity: 10
+  launchable: 1
+  launchVelocity: 3
+  isInSpaceship: 0
 --- !u!114 &131124781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2293,7 +2303,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757110968}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 

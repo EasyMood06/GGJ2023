@@ -53,6 +53,9 @@ public class UIManager : MonoBehaviour
     {
         ItemUI.SetActive(false);
         Time.timeScale = 1;
+        GameObject.Find("Player").GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = false;
+        GameObject.Find("Player").GetComponent<PlayerController>().launchable = true;
         smalls.ThrowPlayerAway();
         smalls = null;
     }

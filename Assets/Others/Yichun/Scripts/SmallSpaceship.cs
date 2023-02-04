@@ -11,7 +11,7 @@ public class SmallSpaceship : MonoBehaviour
     public int item1Level; //1号物品稀有度
     public int item2Level; //2号物品稀有度
     public int item3Level; //3号物品稀有度
-    public float throwForce = 2;
+    //public float throwForce = 2;
 
     public SpaceshipManager spaceshipManager;
     public UIManager uiManager;
@@ -38,7 +38,7 @@ public class SmallSpaceship : MonoBehaviour
         if (isInSpaceship) return; //每次进入只触发一次菜单
         if (collision.gameObject.GetComponent<PlayerController>()) //player来到这个小太空舱
         {
-           
+            GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
             isInSpaceship = true;
             playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
             collision.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
@@ -62,7 +62,7 @@ public class SmallSpaceship : MonoBehaviour
     {
         if(playerRB)
         {
-            playerRB.AddForce((this.transform.position - playerRB.gameObject.transform.position) * throwForce, ForceMode2D.Impulse);
+            //playerRB.AddForce((this.transform.position - playerRB.gameObject.transform.position) * throwForce, ForceMode2D.Impulse);
             playerRB = null;
         }
        

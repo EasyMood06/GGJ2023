@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     public float dampingRatioIncreasingSpeed = 0.5f;    // hook's damping ratio increasing ratio
     public float maximumDampingRatio = 0.5f;    // hook's max damping ratio
     public float maximumVelocity = 10f;
+    public bool launchable = true;
+    public float launchVelocity = 3f;
+    public bool isInSpaceship = false;
     Vector3 targetPosition;
     Vector3 targetUnitDirection;
     Vector3 drawPosition;
@@ -38,9 +41,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ShootLogicUpdate();
-        playerLine.DrawLine(drawPosition);
-        SpeedMapping();
+        if (!isInSpaceship)
+        {
+            if (!launchable)
+            {
+                ShootLogicUpdate();
+            }
+            else
+            {
+                Launch();
+            }
+            playerLine.DrawLine(drawPosition);
+            SpeedMapping();
+        }
     }
     void SpeedMapping()
     {
@@ -63,7 +76,20 @@ public class PlayerController : MonoBehaviour
             springJoint2D.dampingRatio = maximumDampingRatio;
         }
     }
-
+    void Launch()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            print("Launching once");
+            // record target position
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            targetPosition = new Vector3(worldPosition.x, worldPosition.y, 0);
+            targetUnitDirection = Vector3.Normalize(targetPosition - transform.position);
+            gameObject.GetComponent<Rigidbody2D>().velocity = targetUnitDirection * launchVelocity;
+            launchable = false;
+        }
+        return;
+    }
     //check if drawPosition is in range a rock
     void CheckCollisionWithRocks()
     {
@@ -105,7 +131,7 @@ public class PlayerController : MonoBehaviour
         if(!isShooted)
         {
             drawPosition = transform.position;
-            if(Input.GetMouseButtonUp(0))
+            if(Input.GetMouseButtonDown(0))
             {
                 print("Shooting once");
                 // record target position
