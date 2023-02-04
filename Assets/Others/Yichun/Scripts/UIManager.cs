@@ -9,14 +9,17 @@ public class UIManager : MonoBehaviour
     public PlayerController player;
     public GameObject ItemUI;
     public GameObject itemName1;
+    public GameObject itemInfo1;
     public GameObject itemImage1;
     public GameObject itemBtn1;
 
     public GameObject itemName2;
+    public GameObject itemInfo2;
     public GameObject itemImage2;
     public GameObject itemBtn2;
 
     public GameObject itemName3;
+    public GameObject itemInfo3;
     public GameObject itemImage3;
     public GameObject itemBtn3;
 
@@ -39,6 +42,10 @@ public class UIManager : MonoBehaviour
         itemName2.GetComponent<Text>().text = smallSpaceship.itemNames[1];
         itemName3.GetComponent<Text>().text = smallSpaceship.itemNames[2];
 
+        itemInfo1.GetComponent<Text>().text = smallSpaceship.itemInfo[0];
+        itemInfo2.GetComponent<Text>().text = smallSpaceship.itemInfo[1];
+        itemInfo3.GetComponent<Text>().text = smallSpaceship.itemInfo[2];
+
         itemImage1.GetComponent<Image>().sprite = smallSpaceship.itemImages[0];
         itemImage2.GetComponent<Image>().sprite = smallSpaceship.itemImages[1];
         itemImage3.GetComponent<Image>().sprite = smallSpaceship.itemImages[2];
@@ -59,6 +66,10 @@ public class UIManager : MonoBehaviour
         itemName1.GetComponent<Text>().text = null;
         itemName2.GetComponent<Text>().text = null;
         itemName3.GetComponent<Text>().text = null;
+
+        itemInfo1.GetComponent<Text>().text = null;
+        itemInfo2.GetComponent<Text>().text = null;
+        itemInfo3.GetComponent<Text>().text = null;
 
         itemImage1.GetComponent<Image>().sprite = null;
         itemImage2.GetComponent<Image>().sprite = null;
@@ -87,6 +98,7 @@ public class UIManager : MonoBehaviour
         if(itemIndex == 1)
         {
            //itemPrefab1.GetComponent<Item>().OnGet();
+
         }
         else if (itemIndex == 2)
         {

@@ -20,6 +20,10 @@ MonoBehaviour:
   - "1\u7EA7\u5C0F\u5200"
   - "1\u7EA7\u957F\u5251"
   - "1\u7EA7\u5927\u9524"
+  itemInfoLevel1:
+  - This is Item 1 Level 1
+  - This is Item 2 Level 1
+  - This is Item 3 Level 1
   itemImagesLevel1:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
@@ -32,6 +36,10 @@ MonoBehaviour:
   - "2\u7EA7\u5C0F\u5200"
   - "2\u7EA7\u957F\u5251"
   - "2\u7EA7\u5927\u9524"
+  itemInfoLevel2:
+  - This is Item 1 Level 2
+  - This is Item 2 Level 2
+  - This is Item 3 Level 2
   itemImagesLevel2:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
@@ -44,6 +52,10 @@ MonoBehaviour:
   - "3\u7EA7\u5C0F\u5200"
   - "3\u7EA7\u957F\u5251"
   - "3\u7EA7\u5927\u9524"
+  itemInfoLevel3:
+  - This is Item 1 Level 3
+  - This is Item 2 Level 3
+  - This is Item 3 Level 3
   itemImagesLevel3:
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}

@@ -7,6 +7,7 @@ public class SmallSpaceship : MonoBehaviour
 {
     public GameObject[] itemPrefabs; //不用填 会自动生成
     public string[] itemNames;  //不用填 会自动生成
+    public string[] itemInfo;  //不用填 会自动生成
     public Sprite[] itemImages; //不用填 会自动生成
     public int item1Level; //1号物品稀有度
     public int item2Level; //2号物品稀有度
@@ -33,7 +34,8 @@ public class SmallSpaceship : MonoBehaviour
             
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collider2D collision)
     {
         if (isInSpaceship) return; //每次进入只触发一次菜单
         if (collision.gameObject.GetComponent<PlayerController>()) //player来到这个小太空舱
@@ -50,7 +52,7 @@ public class SmallSpaceship : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collider2D collision)
     {
         isInSpaceship = false;
     }
