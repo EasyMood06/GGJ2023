@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollowing : MonoBehaviour
 {
+    public float zoomCoefficient = 2.0f;
     PlayerController player;
     Rigidbody2D playerRb2D;
     Camera mainCamera;
@@ -22,7 +23,7 @@ public class CameraFollowing : MonoBehaviour
 
         // camera zoom in zoom out
         Vector2 playerVelocity = playerRb2D.velocity;
-        float playerMovingSpeed = Mathf.Sqrt(playerVelocity.x*playerVelocity.x + playerVelocity.y*playerVelocity.y);
+        float playerMovingSpeed = Mathf.Sqrt(playerVelocity.x * playerVelocity.x + playerVelocity.y * playerVelocity.y);
         float targetOrthographicSize = 10 + playerMovingSpeed/2;
         if(targetOrthographicSize >= 15)
         {
@@ -30,14 +31,14 @@ public class CameraFollowing : MonoBehaviour
         }
         if(mainCamera.orthographicSize > targetOrthographicSize)
         {
-            mainCamera.orthographicSize -= Time.deltaTime;
+            mainCamera.orthographicSize -= Time.deltaTime * zoomCoefficient;
             if(mainCamera.orthographicSize <= targetOrthographicSize)
             {
                 mainCamera.orthographicSize = targetOrthographicSize;
             }
         }else if(mainCamera.orthographicSize < targetOrthographicSize)
         {
-            mainCamera.orthographicSize += Time.deltaTime;
+            mainCamera.orthographicSize += Time.deltaTime * zoomCoefficient;
             if(mainCamera.orthographicSize >= targetOrthographicSize)
             {
                 mainCamera.orthographicSize = targetOrthographicSize;
