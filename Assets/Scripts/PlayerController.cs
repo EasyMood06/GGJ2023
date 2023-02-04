@@ -37,7 +37,10 @@ public class PlayerController : MonoBehaviour
         isHookBacking = false;
         drawPosition = transform.position;
     }
-
+    void FixedUpdate()
+    {
+        SpeedMapping();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -52,7 +55,6 @@ public class PlayerController : MonoBehaviour
                 Launch();
             }
             playerLine.DrawLine(drawPosition);
-            SpeedMapping();
         }
     }
     void SpeedMapping()

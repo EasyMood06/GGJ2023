@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SpaceRock : MonoBehaviour
 {
-    int massCoefficient = 50;
+    int massCoefficient = 10;
     int forceCoefficient = 15;
-    float distanceForInitialization = 50;
+    public float distanceForInitialization = 50;
     Vector2 unitDirection;
     float force;
     int randRorce;
@@ -56,7 +56,7 @@ public class SpaceRock : MonoBehaviour
     void RandomGeneration()
     {
         randRorce = Random.Range(1, 5);
-        randSize = Random.Range(0.3f, 2.0f);
+        randSize = Random.Range(0.8f, 2.0f);
         randDirection = Random.Range(0, 360);
     }
 
@@ -65,7 +65,7 @@ public class SpaceRock : MonoBehaviour
         // size Transform.scale = random_size
         transform.localScale = new Vector3(randSize, randSize, randSize);
         // weight Rigidbody2D.Mass = rand_size * mass_coefficient
-        rb2D.mass = randSize * massCoefficient;
+        rb2D.mass = randSize * randSize * massCoefficient;
         // force = mass * random_force * force_coefficient;
         force = rb2D.mass * randRorce * forceCoefficient;
         // direction = new Vector2(cos(rand_direction), sin(rand_direction))
