@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class UIManager : MonoBehaviour
 {
@@ -97,16 +98,17 @@ public class UIManager : MonoBehaviour
     {
         if(itemIndex == 1)
         {
-           //itemPrefab1.GetComponent<Item>().OnGet();
-
+            player.GetComponent<ItemGenerator>().Generate(player, itemPrefab1.name);
         }
         else if (itemIndex == 2)
         {
             //itemPrefab2.GetComponent<Item>().OnGet();
+            player.GetComponent<ItemGenerator>().Generate(player, itemPrefab2.name);
         }
         else if (itemIndex == 3)
         {
             //itemPrefab3.GetComponent<Item>().OnGet();
+            player.GetComponent<ItemGenerator>().Generate(player, itemPrefab3.name);
         }
 
         LeaveSmallSpaceship();
