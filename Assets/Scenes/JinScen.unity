@@ -456,7 +456,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!212 &131124778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -543,6 +543,7 @@ MonoBehaviour:
   hookShrinkingSpeed: 15
   dampingRatioIncreasingSpeed: 1
   maximumDampingRatio: 0.5
+  maximumVelocity: 10
 --- !u!70 &131124781
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

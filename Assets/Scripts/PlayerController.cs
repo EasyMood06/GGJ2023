@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float hookShrinkingSpeed = 8.0f; // hook's speed of shrinking when hooked to a target
     public float dampingRatioIncreasingSpeed = 0.5f;    // hook's damping ratio increasing ratio
     public float maximumDampingRatio = 0.5f;    // hook's max damping ratio
+    public float maximumVelocity = 10f;
     Vector3 targetPosition;
     Vector3 targetUnitDirection;
     Vector3 drawPosition;
@@ -39,6 +40,17 @@ public class PlayerController : MonoBehaviour
     {
         ShootLogicUpdate();
         playerLine.DrawLine(drawPosition);
+        SpeedMapping();
+    }
+    void SpeedMapping()
+    {
+        Rigidbody2D thisRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        float nowVelocity = thisRigidbody.velocity.magnitude;
+        if (nowVelocity > maximumVelocity)
+        {
+            Vector2 newVelocity = new Vector2(thisRigidbody.velocity.x / nowVelocity * maximumVelocity, thisRigidbody.velocity.y / nowVelocity * maximumVelocity);
+            thisRigidbody.velocity = newVelocity;
+        }
     }
     void DampingRatioReturn()
     {
