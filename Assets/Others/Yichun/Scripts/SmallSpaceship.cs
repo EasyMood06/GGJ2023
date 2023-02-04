@@ -52,10 +52,7 @@ public class SmallSpaceship : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PlayerController>()) //player离开这个小太空舱
-        {
-            leaveSpaceshipCD();
-        }
+        isInSpaceship = false;
     }
 
     public void ThrowPlayerAway()
@@ -68,10 +65,5 @@ public class SmallSpaceship : MonoBehaviour
        
     }
 
-    IEnumerator leaveSpaceshipCD()
-    {
-        yield return new WaitForSeconds(2f);
-        isInSpaceship = false;
-    }
 
 }
