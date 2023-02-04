@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpaceRock : MonoBehaviour
 {
+    Sprite[] spriteArray;
+    SpriteRenderer spriteRenderer;
     int massCoefficient = 10;
     int forceCoefficient = 15;
     public float distanceForInitialization = 50;
@@ -25,6 +27,7 @@ public class SpaceRock : MonoBehaviour
         isInitialized = false;
         player = FindObjectOfType<PlayerController>();
         initialPosition = transform.position;
+        InitializeSprite();
     }
 
     void Update()
@@ -72,5 +75,13 @@ public class SpaceRock : MonoBehaviour
         unitDirection = new Vector2(Mathf.Cos(randDirection), Mathf.Sin(randDirection));
         // add force to rigidbody
         rb2D.AddForce(force * unitDirection);
+    }
+
+    void InitializeSprite()
+    {
+        spriteArray = Resources.LoadAll<Sprite>("Stones");
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        int rand_index = (int)Random.Range(0,5);
+        spriteRenderer.sprite = spriteArray[rand_index];
     }
 }

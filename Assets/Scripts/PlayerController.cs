@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            print("Launching once");
+            // print("Launching once");
             // record target position
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition = new Vector3(worldPosition.x, worldPosition.y, 0);
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
             drawPosition = transform.position;
             if(Input.GetMouseButtonDown(0))
             {
-                print("Shooting once");
+                // print("Shooting once");
                 // record target position
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPosition = new Vector3(worldPosition.x, worldPosition.y, 0);
