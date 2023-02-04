@@ -45,7 +45,7 @@ public class SpaceRock : MonoBehaviour
         float distToInitialPosition = Vector3.Distance(transform.position, initialPosition);
         if(distToInitialPosition >= distanceForInitialization)  // need to reset position
         {
-            float distToPlayer = Vector3.Distance(player.transform.position, transform.position);
+            float distToPlayer = Vector3.Distance(player.transform.position, initialPosition);
             if(distToPlayer >= distanceForInitialization)
             {
                 transform.position = initialPosition;
