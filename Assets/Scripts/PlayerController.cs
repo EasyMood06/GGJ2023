@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     SpaceRock targetRock;
     SpringJoint2D springJoint2D;
     float ELaunchCD = 0;
+    public bool isControlable;
+    public VFX vfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,14 +39,17 @@ public class PlayerController : MonoBehaviour
         isOnTarget = false;
         isHookBacking = false;
         drawPosition = transform.position;
+        isControlable = true;
     }
     void FixedUpdate()
     {
+        if(!isControlable)  {return;}
         SpeedMapping();
     }
     // Update is called once per frame
     void Update()
     {
+        if(!isControlable)  {return;}
         if (!isInSpaceship)
         {
             if (!launchable)
@@ -114,6 +119,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = targetUnitDirection * launchVelocity;
             GetComponent<PlayerCharge>().CostCharge(1);
             ELaunchCD = 0.2f;
+            vfx.PlayVFX();
         }
         return;
     }
