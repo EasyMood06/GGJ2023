@@ -43,6 +43,21 @@ public class ItemGenerator : MonoBehaviour
                 pc.gameObject.AddComponent<SolarPanel>();
                 pc.GetComponent<SolarPanel>().OnGet();
                 break;
+            case "DrillShoes":
+                pc.GetComponent<RockBreaker>().OnGet();
+                break;
+            case "StarMap":
+                pc.GetComponent<StarMap>().OnGet();
+                break;
+            case "RotatingFun":
+                pc.GetComponent<RotatingFun>().OnGet();
+                break;
+            case "LightlyLight":
+                pc.GetComponent<LightlyLight>().OnGet();
+                break;
+            case "HeavilyHeavy":
+                pc.GetComponent<HeavilyHeavy>().OnGet();
+                break;
         }
     }
 }
