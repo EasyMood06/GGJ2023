@@ -63,6 +63,7 @@ public class SmallSpaceship : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if(collision.gameObject.GetComponent<PlayerController>())    
         { 
             if(!isFinded)       // player find it at the first time
@@ -83,6 +84,8 @@ public class SmallSpaceship : MonoBehaviour
             }
         }
         if (isInSpaceship) return; //ÿ�ν���ֻ����һ�β˵�
+        if (isTheLastSpaceShip) return;
+
         if (collision.collider.gameObject.GetComponent<PlayerController>()) //player�������С̫�ղ�
         {
             if(choosed) // ������ѡ����Ʒ��̫�ղ�
