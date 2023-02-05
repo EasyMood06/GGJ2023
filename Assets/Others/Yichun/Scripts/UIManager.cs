@@ -59,7 +59,7 @@ public class UIManager : MonoBehaviour
         ItemUI.SetActive(true);
 
         smalls = smallSpaceship;
-        Debug.LogError("Update Item UI");
+        //Debug.LogError("Update Item UI");
 
     }
 
@@ -89,7 +89,7 @@ public class UIManager : MonoBehaviour
         ItemUI2.SetActive(true);
         smalls = smallSpaceship;
 
-        Debug.LogError("Show Empty Item UI");
+        //Debug.LogError("Show Empty Item UI");
     }
 
     public void LeaveSmallSpaceship()
@@ -102,7 +102,7 @@ public class UIManager : MonoBehaviour
         player.GetComponent<PlayerController>().launchable = true;
         smalls.ThrowPlayerAway();
 
-        Debug.LogError("Leave Spaceship");
+        //Debug.LogError("Leave Spaceship");
         //ResetItemUI();
     }
 
