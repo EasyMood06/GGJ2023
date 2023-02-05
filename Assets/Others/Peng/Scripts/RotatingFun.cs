@@ -7,7 +7,7 @@ public class RotatingFun : Item
     public override void OnGet()
     {
         base.OnGet();
-        GameObject.Find("Emoji").GetComponent<EmojiShowing>().enable = true;
+        GameObject.Find("Main Camera").transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public override void OnEquip()
