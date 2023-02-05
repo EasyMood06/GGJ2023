@@ -30,8 +30,8 @@ public class SpaceshipManager : MonoBehaviour
 
     private void Awake()
     {
-        itemIndexRecord = new int[3];
-        itemLevelRecord = new int[3];
+        itemIndexRecord = new int[6];
+        itemLevelRecord = new int[6];
 
         //游戏开始时从ItemList里复制一份list到自己这备用
         itemPrefabsLevel1 = new List<GameObject>(itemList.itemPrefabsLevel1);
@@ -64,16 +64,16 @@ public class SpaceshipManager : MonoBehaviour
             Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex1);
 
             spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel1[itemIndex1];
-            itemPrefabsLevel1.RemoveAt(itemIndex1);
+            //itemPrefabsLevel1.RemoveAt(itemIndex1);
 
             spaceship.itemNames[itemIndexInMenu] = itemNamesLevel1[itemIndex1];
-            itemNamesLevel1.RemoveAt(itemIndex1);
+            //itemNamesLevel1.RemoveAt(itemIndex1);
 
             spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel1[itemIndex1];
-            itemInfoLevel1.RemoveAt(itemIndex1);
+            //itemInfoLevel1.RemoveAt(itemIndex1);
 
             spaceship.itemImages[itemIndexInMenu] = itemImagesLevel1[itemIndex1];
-            itemImagesLevel1.RemoveAt(itemIndex1);
+            //itemImagesLevel1.RemoveAt(itemIndex1);
         }
         else if (itemLevel == 2)
         {
@@ -81,16 +81,16 @@ public class SpaceshipManager : MonoBehaviour
             Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex2);
 
             spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel2[itemIndex2];
-            itemPrefabsLevel2.RemoveAt(itemIndex2);
+            //itemPrefabsLevel2.RemoveAt(itemIndex2);
 
             spaceship.itemNames[itemIndexInMenu] = itemNamesLevel2[itemIndex2];
-            itemNamesLevel2.RemoveAt(itemIndex2);
+            //itemNamesLevel2.RemoveAt(itemIndex2);
 
             spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel2[itemIndex2];
-            itemInfoLevel2.RemoveAt(itemIndex2);
+            //itemInfoLevel2.RemoveAt(itemIndex2);
 
             spaceship.itemImages[itemIndexInMenu] = itemImagesLevel2[itemIndex2];
-            itemImagesLevel2.RemoveAt(itemIndex2);
+            //itemImagesLevel2.RemoveAt(itemIndex2);
 
         }
         else if (itemLevel == 3)
@@ -99,16 +99,16 @@ public class SpaceshipManager : MonoBehaviour
             Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex3);
 
             spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel3[itemIndex3];
-            itemPrefabsLevel3.RemoveAt(itemIndex3);
+            //itemPrefabsLevel3.RemoveAt(itemIndex3);
 
             spaceship.itemNames[itemIndexInMenu] = itemNamesLevel3[itemIndex3];
-            itemNamesLevel3.RemoveAt(itemIndex3);
+            //itemNamesLevel3.RemoveAt(itemIndex3);
 
             spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel3[itemIndex3];
-            itemInfoLevel3.RemoveAt(itemIndex3);
+            //itemInfoLevel3.RemoveAt(itemIndex3);
 
             spaceship.itemImages[itemIndexInMenu] = itemImagesLevel3[itemIndex3];
-            itemImagesLevel3.RemoveAt(itemIndex3);
+            //itemImagesLevel3.RemoveAt(itemIndex3);
         }
 
         else

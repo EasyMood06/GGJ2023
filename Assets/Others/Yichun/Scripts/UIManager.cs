@@ -101,6 +101,8 @@ public class UIManager : MonoBehaviour
         player.GetComponent<PlayerController>().isInSpaceship = false;
         player.GetComponent<PlayerController>().launchable = true;
         smalls.ThrowPlayerAway();
+
+        Debug.LogError("Leave Spaceship");
         //ResetItemUI();
     }
 

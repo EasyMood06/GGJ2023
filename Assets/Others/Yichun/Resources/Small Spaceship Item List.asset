@@ -27,12 +27,12 @@ MonoBehaviour:
   - StarMap1
   - RotatingFun1
   itemInfoLevel1:
-  - This is Item 1 Level 1
-  - This is Item 2 Level 1
-  - This is Item 3 Level 1
-  - This is Item 4 Level 1
-  - This is Item 5 Level 1
-  - This is Item 6 Level 1
+  - Max Battery ++
+  - Heart ++
+  - Hook Launch Speed ++
+  - 'When reaching max speed, can kick the meteorite away. '
+  - 'Show the final destination. '
+  - Rotating is FUN!!!
   itemImagesLevel1:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
@@ -49,18 +49,18 @@ MonoBehaviour:
   - {fileID: 1029557950162494070, guid: 52fdd69f88de7eb4b960ad292c600ae2, type: 3}
   itemNamesLevel2:
   - EnhancedWinch2
-  - ExtraRope2
+  - Extra Rope
   - SolarPanel2
   - EnhancedWinch2
   - LightlyLight
   - HeavilyHeavy
   itemInfoLevel2:
-  - This is Item 1 Level 2
-  - This is Item 2 Level 2
-  - This is Item 3 Level 2
-  - This is Item 4 Level 2
-  - This is Item 5 Level 2
-  - This is Item 6 Level 2
+  - Hook Return Speed ++
+  - Rope Max Distance ++
+  - Max Charge ++, Charge Recovery++.
+  - Hook Return Speed ++
+  - Player Mass --
+  - Player Mass ++
   itemImagesLevel2:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
@@ -83,12 +83,12 @@ MonoBehaviour:
   - BoosterInjection3
   - EnhancedHammer3
   itemInfoLevel3:
-  - This is Item 1 Level 3
-  - This is Item 2 Level 3
-  - This is Item 3 Level 3
-  - This is Item 4 Level 3
-  - This is Item 5 Level 3
-  - This is Item 6 Level 3
+  - Max Battery ++
+  - Heart ++
+  - Hook Launch Speed ++
+  - Max Battery ++
+  - Heart ++
+  - Hook Launch Speed ++
   itemImagesLevel3:
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
