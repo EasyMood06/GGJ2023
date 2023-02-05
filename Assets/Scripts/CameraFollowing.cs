@@ -93,6 +93,7 @@ public class CameraFollowing : MonoBehaviour
     {
         healthUI.SetActive(false);
         holdItemUI.SetActive(false);
+        player.isControlable = false;
         isGameEnded = true;
     }
 }
