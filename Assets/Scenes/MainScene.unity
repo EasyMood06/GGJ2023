@@ -30268,6 +30268,8 @@ GameObject:
   - component: {fileID: 1308071872}
   - component: {fileID: 1308071873}
   - component: {fileID: 1308071874}
+  - component: {fileID: 1308071876}
+  - component: {fileID: 1308071875}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30497,6 +30499,42 @@ MonoBehaviour:
   isFull: 0
   chargeTransform: {fileID: 1414940104}
   chargeBgTransform: {fileID: 376329698}
+--- !u!114 &1308071875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308071864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac7566b5b19305498230240db84f6bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  description: 
+  icon: {fileID: 0}
+  Rarity: 0
+  isActive: 0
+  playerController: {fileID: 0}
+--- !u!114 &1308071876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308071864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97fe3fc5ca479d4283be00523b14166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  description: 
+  icon: {fileID: 0}
+  Rarity: 0
+  isActive: 0
+  playerController: {fileID: 0}
 --- !u!4 &1309625464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2312033751286382402, guid: e391812b3d499a64e8a9d59cc3b41e93, type: 3}

@@ -44,13 +44,13 @@ public class ItemGenerator : MonoBehaviour
                 pc.GetComponent<SolarPanel>().OnGet();
                 break;
             case "DrillShoes":
-                pc.GetComponent<RockBreaker>().OnGet();
+                GameObject.Find("Player").GetComponent<BreakRock>().enable = true;
                 break;
             case "StarMap":
-                pc.GetComponent<StarMap>().OnGet();
+                GameObject.Find("Main Camera").transform.GetChild(1).gameObject.SetActive(true);
                 break;
             case "RotatingFun":
-                pc.GetComponent<RotatingFun>().OnGet();
+                GameObject.Find("Main Camera").transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case "LightlyLight":
                 pc.GetComponent<LightlyLight>().OnGet();
