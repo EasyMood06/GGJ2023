@@ -29,7 +29,7 @@ public class CameraFollowing : MonoBehaviour
         playerRb2D = player.GetComponent<Rigidbody2D>();
         mainCamera = GetComponent<Camera>();
         isGameEnded = false;
-        EndGame();
+       // EndGame();
     }
 
     // Update is called once per frame
