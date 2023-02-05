@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2312033751286382400}
   - component: {fileID: 2312033751286382401}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: LargeLargeRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceForInitialization: 50
-  maxForce: 3
-  minForce: 1
-  maxSize: 1.5
-  minSize: 0.8
+  maxForce: 5
+  minForce: 2
+  maxSize: 3
+  minSize: 2
 --- !u!58 &2312033751286382401
 CircleCollider2D:
   m_ObjectHideFlags: 0
