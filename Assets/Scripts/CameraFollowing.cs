@@ -100,6 +100,7 @@ public class CameraFollowing : MonoBehaviour
         musicBox.SetActive(true);
         player.isControlable = false;
         isGameEnded = true;
+        titleText.SetActive(true);
         foreach(Transform child in transform)
         {
             child.gameObject.SetActive(false);
