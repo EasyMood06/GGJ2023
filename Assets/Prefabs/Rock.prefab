@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2312033751286382412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.27, y: -5.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,10 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceForInitialization: 50
-  maxForce: 3
-  minForce: 1
-  maxSize: 1.5
-  minSize: 0.8
 --- !u!58 &2312033751286382401
 CircleCollider2D:
   m_ObjectHideFlags: 0
