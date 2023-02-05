@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Battery : Item
 {
-    public float maxChargeChange = 1;
+    public float maxChargeChange = 0.5f;
 
     public override void OnGet()
     {

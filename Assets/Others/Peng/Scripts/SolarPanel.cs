@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SolarPanel : Item
 {
-    public float maxChargeChange = 2;
-    public float RecoverSpeedChange = 1f;
+    public float maxChargeChange = 1;
+    public float RecoverSpeedChange = 0.1f;
 
     public override void OnGet()
     {
