@@ -16,28 +16,20 @@ MonoBehaviour:
   - {fileID: 1029557950162494070, guid: a4314b3f89ed65c4cabb5c93b05c4392, type: 3}
   - {fileID: 1029557950162494070, guid: 13616bb8013bfc449ad75ad589990422, type: 3}
   - {fileID: 1029557950162494070, guid: 07873a0674a97704c83b1cd6594a7d76, type: 3}
-  - {fileID: 1029557950162494070, guid: a7d3ba2b97ff4174b9e12e45deb11049, type: 3}
-  - {fileID: 1029557950162494070, guid: ead504b76a4ad404db6d45a9d41e8dec, type: 3}
   - {fileID: 1029557950162494070, guid: 1d4b301d7dc7de747b25d96b1b7f2281, type: 3}
   itemNamesLevel1:
   - Battery1
   - Booster1
   - EnhancedHammer1
-  - DrillShoes1
-  - StarMap1
   - RotatingFun1
   itemInfoLevel1:
   - Max Battery ++
   - Heart ++
   - Hook Launch Speed ++
-  - 'When reaching max speed, can kick the meteorite away. '
-  - 'Show the final destination. '
   - Rotating is FUN!!!
   itemImagesLevel1:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
-  - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
-  - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   itemPrefabsLevel2:
@@ -45,54 +37,38 @@ MonoBehaviour:
   - {fileID: 1029557950162494070, guid: acb0443f7705b254db939cdb897a4cb7, type: 3}
   - {fileID: 1029557950162494070, guid: 46432f58131cfde4086a8ec90ad5991d, type: 3}
   - {fileID: 1029557950162494070, guid: c95bea834c703194e92c7124257cf3d2, type: 3}
-  - {fileID: 1029557950162494070, guid: 3c1015e6b9e59e6428ca777ded51f724, type: 3}
-  - {fileID: 1029557950162494070, guid: 52fdd69f88de7eb4b960ad292c600ae2, type: 3}
   itemNamesLevel2:
   - EnhancedWinch2
   - Extra Rope
   - SolarPanel2
   - EnhancedWinch2
-  - LightlyLight
-  - HeavilyHeavy
   itemInfoLevel2:
   - Hook Return Speed ++
   - Rope Max Distance ++
   - Max Charge ++, Charge Recovery++.
   - Hook Return Speed ++
-  - Player Mass --
-  - Player Mass ++
   itemImagesLevel2:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
-  - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
-  - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
   itemPrefabsLevel3:
-  - {fileID: 1029557950162494070, guid: a4314b3f89ed65c4cabb5c93b05c4392, type: 3}
-  - {fileID: 1029557950162494070, guid: 13616bb8013bfc449ad75ad589990422, type: 3}
-  - {fileID: 1029557950162494070, guid: 07873a0674a97704c83b1cd6594a7d76, type: 3}
-  - {fileID: 1029557950162494070, guid: a4314b3f89ed65c4cabb5c93b05c4392, type: 3}
-  - {fileID: 1029557950162494070, guid: 13616bb8013bfc449ad75ad589990422, type: 3}
-  - {fileID: 1029557950162494070, guid: 07873a0674a97704c83b1cd6594a7d76, type: 3}
+  - {fileID: 1029557950162494070, guid: a7d3ba2b97ff4174b9e12e45deb11049, type: 3}
+  - {fileID: 1029557950162494070, guid: ead504b76a4ad404db6d45a9d41e8dec, type: 3}
+  - {fileID: 1029557950162494070, guid: 3c1015e6b9e59e6428ca777ded51f724, type: 3}
+  - {fileID: 1029557950162494070, guid: 52fdd69f88de7eb4b960ad292c600ae2, type: 3}
   itemNamesLevel3:
-  - Battery3
-  - BoosterInjection3
-  - EnhancedHammer3
-  - Battery3
-  - BoosterInjection3
-  - EnhancedHammer3
+  - Drill Shoes
+  - Star Map
+  - Lightly Light
+  - Heavily Heavy
   itemInfoLevel3:
-  - Max Battery ++
-  - Heart ++
-  - Hook Launch Speed ++
-  - Max Battery ++
-  - Heart ++
-  - Hook Launch Speed ++
+  - 'When reaching max speed, can kick the meteorite away. '
+  - 'Show the final destination. '
+  - Player Mass --
+  - Player Mass ++
   itemImagesLevel3:
   - {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
-  - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
-  - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}

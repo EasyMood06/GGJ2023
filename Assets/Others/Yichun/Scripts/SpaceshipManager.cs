@@ -61,7 +61,7 @@ public class SpaceshipManager : MonoBehaviour
         if (itemLevel == 1)
         {
             itemIndex1 = Random.Range(0, itemPrefabsLevel1.Count);
-            Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex1);
+            //Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex1);
 
             spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel1[itemIndex1];
             //itemPrefabsLevel1.RemoveAt(itemIndex1);
@@ -78,7 +78,7 @@ public class SpaceshipManager : MonoBehaviour
         else if (itemLevel == 2)
         {
             itemIndex2 = Random.Range(0, itemPrefabsLevel2.Count);
-            Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex2);
+            //Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex2);
 
             spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel2[itemIndex2];
             //itemPrefabsLevel2.RemoveAt(itemIndex2);
@@ -93,22 +93,38 @@ public class SpaceshipManager : MonoBehaviour
             //itemImagesLevel2.RemoveAt(itemIndex2);
 
         }
-        else if (itemLevel == 3)
+        else if (itemLevel == 3) // 3是不可重复抽取的列表
         {
-            itemIndex3 = Random.Range(0, itemPrefabsLevel3.Count);
-            Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex3);
+            if(itemPrefabsLevel3.Count == 0) // 如果列表3已经没东西可以抽取了，就从列表2里抽
+            {
+                itemIndex3 = Random.Range(0, itemPrefabsLevel2.Count);
+                spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel2[itemIndex3];
 
-            spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel3[itemIndex3];
-            //itemPrefabsLevel3.RemoveAt(itemIndex3);
+                spaceship.itemNames[itemIndexInMenu] = itemNamesLevel2[itemIndex3];
 
-            spaceship.itemNames[itemIndexInMenu] = itemNamesLevel3[itemIndex3];
-            //itemNamesLevel3.RemoveAt(itemIndex3);
+                spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel2[itemIndex3];
 
-            spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel3[itemIndex3];
-            //itemInfoLevel3.RemoveAt(itemIndex3);
+                spaceship.itemImages[itemIndexInMenu] = itemImagesLevel2[itemIndex3];
 
-            spaceship.itemImages[itemIndexInMenu] = itemImagesLevel3[itemIndex3];
-            //itemImagesLevel3.RemoveAt(itemIndex3);
+            }
+            else if(itemPrefabsLevel3.Count > 0)
+            {
+                itemIndex3 = Random.Range(0, itemPrefabsLevel3.Count);
+                //Debug.LogError("SpaceshipManager - itemIndex: " + itemIndex3);
+
+                spaceship.itemPrefabs[itemIndexInMenu] = itemPrefabsLevel3[itemIndex3];
+                itemPrefabsLevel3.RemoveAt(itemIndex3);
+
+                spaceship.itemNames[itemIndexInMenu] = itemNamesLevel3[itemIndex3];
+                itemNamesLevel3.RemoveAt(itemIndex3);
+
+                spaceship.itemInfo[itemIndexInMenu] = itemInfoLevel3[itemIndex3];
+                itemInfoLevel3.RemoveAt(itemIndex3);
+
+                spaceship.itemImages[itemIndexInMenu] = itemImagesLevel3[itemIndex3];
+                itemImagesLevel3.RemoveAt(itemIndex3);
+            }
+           
         }
 
         else
