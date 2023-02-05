@@ -18350,7 +18350,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomCoefficient: 2
-  isGameEnded: 0
   startObject: {fileID: 1116633012066896944}
   endObject: {fileID: 942660547}
   titleText: {fileID: 533834599}
@@ -25719,10 +25718,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d9fa57e2b5bb24fbc6b6c9bad94992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 20
-  hookFlyingSpeed: 30
+  maxDistance: 10
+  hookFlyingSpeed: 15
   hookReturningSpeed: 100
-  hookShrinkingSpeed: 15
+  hookShrinkingSpeed: 10
   dampingRatioIncreasingSpeed: 1
   maximumDampingRatio: 0.5
   maximumVelocity: 10
@@ -25853,8 +25852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe152fca9416b24cbf9cf2812246119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  numOfHearts: 5
+  health: 3
+  numOfHearts: 3
   hearts:
   - {fileID: 269351270}
   - {fileID: 933716182}
@@ -25868,7 +25867,7 @@ MonoBehaviour:
   - {fileID: 1464539829}
   fullHeart: {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   emptyHeart: {fileID: 21300000, guid: 0e71fae5528f1d54da220ccd9aed5563, type: 3}
-  hitCD: 2
+  hitCD: 1
 --- !u!114 &1308071872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25909,7 +25908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCharge: 1
   currentCharge: 1
-  chargeRecoverSpeed: 0.5
+  chargeRecoverSpeed: 0.1
   isFull: 0
   chargeTransform: {fileID: 1414940104}
   chargeBgTransform: {fileID: 376329698}

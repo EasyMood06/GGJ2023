@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f169d436f15667644bc5c2f528435a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enable: 1
+  enable: 0
 --- !u!212 &23637559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 499e30dee4d2f8b40b733888365129ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83ba51600b086864a984bacaf006d14a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1034,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -9545,7 +9545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -14199,6 +14199,10 @@ PrefabInstance:
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Name
       value: SmallSpaceship1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -21238,6 +21242,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallSpaceship1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1116633012115130433, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
+      propertyPath: item1Level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116633012115130433, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
+      propertyPath: item2Level
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -27181,7 +27193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -27629,7 +27641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1929949729
 Transform:
   m_ObjectHideFlags: 0
@@ -27915,7 +27927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -27999,7 +28011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -29371,7 +29383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCharge: 1
   currentCharge: 1
-  chargeRecoverSpeed: 0.1
+  chargeRecoverSpeed: 0.2
   isFull: 0
   chargeTransform: {fileID: 1691103443}
   chargeBgTransform: {fileID: 1041555801}
@@ -29465,7 +29477,7 @@ MonoBehaviour:
   maximumDampingRatio: 0.5
   maximumVelocity: 10
   launchable: 1
-  launchVelocity: 2
+  launchVelocity: 3
   isInSpaceship: 0
   isControlable: 0
   vfx: {fileID: 1260861112}
@@ -29593,7 +29605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
@@ -29820,7 +29832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130432, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116633012115130437, guid: abaabf3693e6f2d49a53813d3fc80280, type: 3}
       propertyPath: m_Sprite
