@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.LogError("Hit " + collision.collider.name);
-        if (isInHitCD) return; //ÉËº¦½áËãCDÖÐÍæ¼Ò²»ÊÜÉË
+        if (isInHitCD) return; //ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½CDï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½
         if (collision.collider.gameObject.GetComponent<Enemy>())
         {
             health -= collision.collider.gameObject.GetComponent<Enemy>().enemyHit;
@@ -50,9 +51,12 @@ public class PlayerHealth : MonoBehaviour
     private void UpdateHealthUI()
     {
         if (health <= 0)
+        {    
             health = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-        if (health > numOfHearts) // µ±Ç°health²»µÃ³¬¹ýui¿ÉÏÔÊ¾ÊýÁ¿ÉÏÏÞ
+        if (health > numOfHearts) // ï¿½ï¿½Ç°healthï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½uiï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             health = numOfHearts;
 
         for(int i = 0; i < hearts.Length; i++)

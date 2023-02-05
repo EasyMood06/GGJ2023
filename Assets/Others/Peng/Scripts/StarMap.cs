@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class StarMap: Item
 {
+    private void Start()
+    {
+        OnGet();
+    }
     public override void OnGet()
     {
         base.OnGet();
-        GameObject.Find("Main Camera").GetComponentInChildren<ArrowShowing>().enable = true;
+        ArrowShowing a = GameObject.Find("Main Camera").transform.GetChild(1).transform.GetChild(0).GetComponentInChildren<ArrowShowing>();
+        GameObject.Find("Main Camera").transform.GetChild(1).transform.GetChild(0).GetComponentInChildren<ArrowShowing>().enable = true;
     }
 
     public override void OnEquip()
