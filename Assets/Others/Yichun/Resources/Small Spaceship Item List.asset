@@ -36,17 +36,17 @@ MonoBehaviour:
   - {fileID: 1029557950162494070, guid: c95bea834c703194e92c7124257cf3d2, type: 3}
   - {fileID: 1029557950162494070, guid: acb0443f7705b254db939cdb897a4cb7, type: 3}
   - {fileID: 1029557950162494070, guid: 46432f58131cfde4086a8ec90ad5991d, type: 3}
-  - {fileID: 1029557950162494070, guid: c95bea834c703194e92c7124257cf3d2, type: 3}
+  - {fileID: 1029557950162494070, guid: ead504b76a4ad404db6d45a9d41e8dec, type: 3}
   itemNamesLevel2:
   - EnhancedWinch2
   - Extra Rope
   - SolarPanel2
-  - EnhancedWinch2
+  - Star Map
   itemInfoLevel2:
   - Hook Return Speed ++
   - Rope Max Distance ++
   - Max Charge ++, Charge Recovery++.
-  - Hook Return Speed ++
+  - 'Show the final destination. '
   itemImagesLevel2:
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
   - {fileID: 21300000, guid: 952568f48497fe246b4c114e1ff4e05f, type: 3}
