@@ -4795,6 +4795,7 @@ MonoBehaviour:
   canvas: {fileID: 1349582896}
   player: {fileID: 0}
   ItemUI: {fileID: 1538630867}
+  ItemUI2: {fileID: 0}
   itemName1: {fileID: 2114940621}
   itemInfo1: {fileID: 2071699332}
   itemImage1: {fileID: 746588427}
@@ -6991,12 +6992,12 @@ GameObject:
   - component: {fileID: 637544889}
   - component: {fileID: 637544888}
   m_Layer: 0
-  m_Name: Music
+  m_Name: MusicBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &637544888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10447,6 +10448,7 @@ MonoBehaviour:
   titleText: {fileID: 533834599}
   healthUI: {fileID: 655400701}
   holdItemUI: {fileID: 761965694}
+  musicBox: {fileID: 637544887}
 --- !u!81 &862583093
 AudioListener:
   m_ObjectHideFlags: 0

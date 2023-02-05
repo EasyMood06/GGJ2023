@@ -5,32 +5,36 @@ using UnityEngine.UI;
 
 public class SmallSpaceship : MonoBehaviour
 {
-    public GameObject[] itemPrefabs; //²»ÓÃÌî »á×Ô¶¯Éú³É
-    public string[] itemNames;  //²»ÓÃÌî »á×Ô¶¯Éú³É
-    public string[] itemInfo;  //²»ÓÃÌî »á×Ô¶¯Éú³É
-    public Sprite[] itemImages; //²»ÓÃÌî »á×Ô¶¯Éú³É
-    public int item1Level; //1ºÅÎïÆ·Ï¡ÓÐ¶È
-    public int item2Level; //2ºÅÎïÆ·Ï¡ÓÐ¶È
-    public int item3Level; //3ºÅÎïÆ·Ï¡ÓÐ¶È
+    public GameObject[] itemPrefabs; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    public string[] itemNames;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    public string[] itemInfo;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    public Sprite[] itemImages; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    public int item1Level; //1ï¿½ï¿½ï¿½ï¿½Æ·Ï¡ï¿½Ð¶ï¿½
+    public int item2Level; //2ï¿½ï¿½ï¿½ï¿½Æ·Ï¡ï¿½Ð¶ï¿½
+    public int item3Level; //3ï¿½ï¿½ï¿½ï¿½Æ·Ï¡ï¿½Ð¶ï¿½
     //public float throwForce = 2;
 
     public SpaceshipManager spaceshipManager;
     public UIManager uiManager;
     public float isInSpaceshipCD = 2f;
-    public bool choosed; //¼ÇÂ¼Íæ¼ÒÊÇ·ñÔÚÕâ¸ö¿Õ¼äÕ¾Ñ¡¹ý¶«Î÷ÁË
+    public bool choosed; //ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Õ¾Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     private bool isInSpaceship;
     private float initIsInSpaceshipCD = 2f;
+    bool isFinded;
+    SpaceLines spaceLines;
     private Rigidbody2D playerRB;
     private void Start()
     {
         isInSpaceship = false;
         isInSpaceshipCD = 2f;
         initIsInSpaceshipCD = isInSpaceshipCD;
+        isFinded = false;
         spaceshipManager = FindObjectOfType<SpaceshipManager>();
         uiManager = FindObjectOfType<UIManager>();
+        spaceLines = FindObjectOfType<SpaceLines>();
 
-        if(spaceshipManager) //Ëæ»ú³éÈ¡ÎïÆ·µ½¸Ã·É´¬ÉÏ
+        if(spaceshipManager) //ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Æ·ï¿½ï¿½ï¿½Ã·É´ï¿½ï¿½ï¿½
         {
             spaceshipManager.RandomSpawnItems(item1Level, 0, this);
             spaceshipManager.RandomSpawnItems(item2Level, 1, this);
@@ -55,10 +59,19 @@ public class SmallSpaceship : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isInSpaceship) return; //Ã¿´Î½øÈëÖ»´¥·¢Ò»´Î²Ëµ¥
-        if (collision.collider.gameObject.GetComponent<PlayerController>()) //playerÀ´µ½Õâ¸öÐ¡Ì«¿Õ²Õ
+        if(collision.gameObject.GetComponent<PlayerController>())    
+        { 
+            if(!isFinded)       // player find it at the first time
+            {
+                isFinded = true;
+                // tell space line that there is a new spaceship be finded, send the transform
+                spaceLines.SendNewFindSpaceShipPosition(transform.position);
+            }
+        }
+        if (isInSpaceship) return; //Ã¿ï¿½Î½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î²Ëµï¿½
+        if (collision.collider.gameObject.GetComponent<PlayerController>()) //playerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Ì«ï¿½Õ²ï¿½
         {
-            if(choosed) // À´µ½ÒÑÑ¡¹ýÎïÆ·µÄÌ«¿Õ²Õ
+            if(choosed) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½Ì«ï¿½Õ²ï¿½
             {
                 GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
                 isInSpaceship = true;
@@ -69,7 +82,7 @@ public class SmallSpaceship : MonoBehaviour
                 Debug.LogError("Enter spaceship again");
                 Time.timeScale = 0;
             }
-            else //À´µ½Ã»ÓÐÑ¡¹ýÎïÆ·µÄÌ«¿Õ²Õ
+            else //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½Ì«ï¿½Õ²ï¿½
             {
                 GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
                 isInSpaceship = true;

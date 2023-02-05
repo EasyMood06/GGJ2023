@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class SpaceLines : MonoBehaviour
 {
-    SmallSpaceship[] smallSpaceships;
     [SerializeField] GameObject spaceLine;
+    Vector3 lastShipPosition;
     // Start is called before the first frame update
     void Start()
     {
-        smallSpaceships = FindObjectsOfType<SmallSpaceship>();
-        for(int i=0; i<smallSpaceships.Length-1; i++)
-        {
-            Vector3 startPosition = smallSpaceships[i].transform.position;
-            Vector3 endPosition = smallSpaceships[i+1].transform.position;
-            DrawSpaceLine(startPosition, endPosition);
-        }
+        lastShipPosition = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SendNewFindSpaceShipPosition(Vector3 newShipPosition)
+    {
+        DrawSpaceLine(lastShipPosition, newShipPosition);
+        lastShipPosition = newShipPosition;
     }
 
     void DrawSpaceLine(Vector3 startPosition, Vector3 endPosition)

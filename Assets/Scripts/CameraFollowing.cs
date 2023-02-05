@@ -16,6 +16,7 @@ public class CameraFollowing : MonoBehaviour
     public GameObject titleText;
     public GameObject healthUI;
     public GameObject holdItemUI;
+    public GameObject musicBox;
     float timer;
     
     // Start is called before the first frame update
@@ -26,7 +27,6 @@ public class CameraFollowing : MonoBehaviour
         playerRb2D = player.GetComponent<Rigidbody2D>();
         mainCamera = GetComponent<Camera>();
         isGameEnded = false;
-        EndGame();
     }
 
     // Update is called once per frame
@@ -35,6 +35,7 @@ public class CameraFollowing : MonoBehaviour
         // when game end
         if(isGameEnded)
         {
+            musicBox.SetActive(true);
             float estimatedTime = (finalCameraOrthoSize - 10) / zoomCoefficient;
             Vector3 startPosition = new Vector3(startObject.transform.position.x, startObject.transform.position.y, transform.position.z);
             UpdateFinalCameraPosition(startPosition, estimatedTime);
