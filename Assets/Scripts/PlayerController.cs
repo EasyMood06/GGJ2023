@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     SpaceRock targetRock;
     SpringJoint2D springJoint2D;
     float ELaunchCD = 0;
+    public VFX vfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -114,6 +115,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = targetUnitDirection * launchVelocity;
             GetComponent<PlayerCharge>().CostCharge(1);
             ELaunchCD = 0.2f;
+            vfx.PlayVFX();
         }
         return;
     }
