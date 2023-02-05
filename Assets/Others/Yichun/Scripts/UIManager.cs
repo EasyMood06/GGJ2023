@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public Canvas canvas;
     public PlayerController player;
     public GameObject ItemUI;
+    public GameObject ItemUI2;
     public GameObject itemName1;
     public GameObject itemInfo1;
     public GameObject itemImage1;
@@ -83,15 +84,24 @@ public class UIManager : MonoBehaviour
         smalls = null;
     }
 
+    public void ShowEmptyShipUI(SmallSpaceship smallSpaceship)
+    {
+        ItemUI2.SetActive(true);
+        smalls = smallSpaceship;
+
+        Debug.LogError("Show Empty Item UI");
+    }
+
     public void LeaveSmallSpaceship()
     {
         ItemUI.SetActive(false);
+        ItemUI2.SetActive(false);
         Time.timeScale = 1;
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         player.GetComponent<PlayerController>().isInSpaceship = false;
         player.GetComponent<PlayerController>().launchable = true;
         smalls.ThrowPlayerAway();
-        ResetItemUI();
+        //ResetItemUI();
     }
 
     public void ChooseItem(int itemIndex) //在菜单选取某个item后item所带的功能生效，且关闭Item选择界面，且不能再次进入
@@ -99,16 +109,19 @@ public class UIManager : MonoBehaviour
         if(itemIndex == 1)
         {
             player.GetComponent<ItemGenerator>().Generate(player, itemPrefab1.name);
+            smalls.choosed = true;
         }
         else if (itemIndex == 2)
         {
             //itemPrefab2.GetComponent<Item>().OnGet();
             player.GetComponent<ItemGenerator>().Generate(player, itemPrefab2.name);
+            smalls.choosed = true;
         }
         else if (itemIndex == 3)
         {
             //itemPrefab3.GetComponent<Item>().OnGet();
             player.GetComponent<ItemGenerator>().Generate(player, itemPrefab3.name);
+            smalls.choosed = true;
         }
 
         LeaveSmallSpaceship();

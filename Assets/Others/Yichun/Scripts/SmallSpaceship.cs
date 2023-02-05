@@ -17,6 +17,7 @@ public class SmallSpaceship : MonoBehaviour
     public SpaceshipManager spaceshipManager;
     public UIManager uiManager;
     public float isInSpaceshipCD = 2f;
+    public bool choosed; //记录玩家是否在这个空间站选过东西了
 
     private bool isInSpaceship;
     private float initIsInSpaceshipCD = 2f;
@@ -57,14 +58,29 @@ public class SmallSpaceship : MonoBehaviour
         if (isInSpaceship) return; //每次进入只触发一次菜单
         if (collision.collider.gameObject.GetComponent<PlayerController>()) //player来到这个小太空舱
         {
-            GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
-            isInSpaceship = true;
-            playerRB = collision.collider.gameObject.GetComponent<Rigidbody2D>();
-            collision.collider.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
-            // UI binding
-            uiManager.UpdateItemUI(this);
-            Debug.LogError("Enter spaceship");
-            Time.timeScale = 0;
+            if(choosed) // 来到已选过物品的太空舱
+            {
+                GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
+                isInSpaceship = true;
+                playerRB = collision.collider.gameObject.GetComponent<Rigidbody2D>();
+                collision.collider.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
+                // UI binding
+                uiManager.ShowEmptyShipUI(this);
+                Debug.LogError("Enter spaceship again");
+                Time.timeScale = 0;
+            }
+            else //来到没有选过物品的太空舱
+            {
+                GameObject.Find("Player").GetComponent<PlayerController>().isInSpaceship = true;
+                isInSpaceship = true;
+                playerRB = collision.collider.gameObject.GetComponent<Rigidbody2D>();
+                collision.collider.gameObject.GetComponent<SpringJoint2D>().connectedBody = playerRB;
+                // UI binding
+                uiManager.UpdateItemUI(this);
+                Debug.LogError("Enter spaceship for the first time");
+                Time.timeScale = 0;
+            }
+           
 
         }
     }
