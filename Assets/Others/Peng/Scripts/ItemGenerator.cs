@@ -21,21 +21,27 @@ public class ItemGenerator : MonoBehaviour
         switch (itemName){
             case "ExtraRope":
                 pc.gameObject.AddComponent<ExtraRope>();
+                pc.GetComponent<ExtraRope>().OnGet();
                 break;
             case "EnhancedHammer":
                 pc.gameObject.AddComponent<EnhancedHammer>();
+                pc.GetComponent<EnhancedHammer>().OnGet();
                 break;
             case "EnhancedWinch":
                 pc.gameObject.AddComponent<EnhancedWinch>();
+                pc.GetComponent<EnhancedWinch>().OnGet();
                 break;
             case "BoosterInjection":
                 pc.gameObject.AddComponent<BoosterInjection>();
+                pc.GetComponent<BoosterInjection>().OnGet();
                 break;
             case "Battery":
                 pc.gameObject.AddComponent<Battery>();
+                pc.GetComponent<Battery>().OnGet();
                 break;
             case "SolarPanel":
                 pc.gameObject.AddComponent<SolarPanel>();
+                pc.GetComponent<SolarPanel>().OnGet();
                 break;
         }
     }
