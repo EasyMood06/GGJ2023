@@ -26,6 +26,7 @@ public class SmallSpaceship : MonoBehaviour
     private Rigidbody2D playerRB;
     [SerializeField] bool isTheLastSpaceShip;
     CameraFollowing cameraFollowing;
+    Sprite openedSprite;
     private void Start()
     {
         isInSpaceship = false;
@@ -36,6 +37,7 @@ public class SmallSpaceship : MonoBehaviour
         uiManager = FindObjectOfType<UIManager>();
         spaceLines = FindObjectOfType<SpaceLines>();
         cameraFollowing = FindObjectOfType<CameraFollowing>();
+        openedSprite = Resources.Load<Sprite>("spaceShipOpen");
 
         if(spaceshipManager) //�����ȡ��Ʒ���÷ɴ���
         {
@@ -66,6 +68,10 @@ public class SmallSpaceship : MonoBehaviour
             if(!isFinded)       // player find it at the first time
             {
                 isFinded = true;
+                if(!isTheLastSpaceShip)     // replace the sprite for small ship
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = openedSprite;
+                }
                 // tell space line that there is a new spaceship be finded, send the transform
                 spaceLines.SendNewFindSpaceShipPosition(transform.position);
                 if(isTheLastSpaceShip)
