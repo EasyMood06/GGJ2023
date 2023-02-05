@@ -17,6 +17,7 @@ public class CameraFollowing : MonoBehaviour
     public GameObject healthUI;
     public GameObject holdItemUI;
     public GameObject musicBox;
+    public GameObject chargeUI;
     float timer;
     
     // Start is called before the first frame update
@@ -36,7 +37,6 @@ public class CameraFollowing : MonoBehaviour
         // when game end
         if(isGameEnded)
         {
-            musicBox.SetActive(true);
             float estimatedTime = (finalCameraOrthoSize - 10) / zoomCoefficient;
             Vector3 startPosition = new Vector3(startObject.transform.position.x, startObject.transform.position.y, transform.position.z);
             UpdateFinalCameraPosition(startPosition, estimatedTime);
@@ -93,6 +93,8 @@ public class CameraFollowing : MonoBehaviour
     {
         healthUI.SetActive(false);
         holdItemUI.SetActive(false);
+        chargeUI.SetActive(false);
+        musicBox.SetActive(true);
         player.isControlable = false;
         isGameEnded = true;
         foreach(Transform child in transform)

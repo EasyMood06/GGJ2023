@@ -312,7 +312,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &21423456
 Rigidbody2D:
   serializedVersion: 4
@@ -449,7 +455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &32315329
 Rigidbody2D:
   serializedVersion: 4
@@ -586,7 +598,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &68996518
 Rigidbody2D:
   serializedVersion: 4
@@ -723,7 +741,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &69813317
 Rigidbody2D:
   serializedVersion: 4
@@ -860,7 +884,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &71634505
 Rigidbody2D:
   serializedVersion: 4
@@ -1064,7 +1094,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &98090942
 Rigidbody2D:
   serializedVersion: 4
@@ -1201,7 +1237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &107692799
 Rigidbody2D:
   serializedVersion: 4
@@ -1428,7 +1470,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &224008467
 Rigidbody2D:
   serializedVersion: 4
@@ -1565,7 +1613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &228990883
 Rigidbody2D:
   serializedVersion: 4
@@ -1702,7 +1756,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &238772440
 Rigidbody2D:
   serializedVersion: 4
@@ -1839,7 +1899,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &242599269
 Rigidbody2D:
   serializedVersion: 4
@@ -2054,7 +2120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &250371010
 Rigidbody2D:
   serializedVersion: 4
@@ -2191,7 +2263,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &263131048
 Rigidbody2D:
   serializedVersion: 4
@@ -2328,7 +2406,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &268089883
 Rigidbody2D:
   serializedVersion: 4
@@ -2620,7 +2704,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &279324540
 Rigidbody2D:
   serializedVersion: 4
@@ -2726,7 +2816,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &285367698
 Rigidbody2D:
   serializedVersion: 4
@@ -2933,7 +3029,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &313246049
 Rigidbody2D:
   serializedVersion: 4
@@ -3070,7 +3172,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &314528184
 Rigidbody2D:
   serializedVersion: 4
@@ -3367,7 +3475,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &333480397
 Rigidbody2D:
   serializedVersion: 4
@@ -3473,7 +3587,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &347207226
 Rigidbody2D:
   serializedVersion: 4
@@ -3641,7 +3761,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &354802065
 Rigidbody2D:
   serializedVersion: 4
@@ -3854,7 +3980,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &377692283
 Rigidbody2D:
   serializedVersion: 4
@@ -3991,7 +4123,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &393570178
 Rigidbody2D:
   serializedVersion: 4
@@ -4128,7 +4266,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &403663887
 Rigidbody2D:
   serializedVersion: 4
@@ -4265,7 +4409,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &426020102
 Rigidbody2D:
   serializedVersion: 4
@@ -4402,7 +4552,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &429481439
 Rigidbody2D:
   serializedVersion: 4
@@ -4772,7 +4928,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &441174662
 Rigidbody2D:
   serializedVersion: 4
@@ -4909,7 +5071,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &448898060
 Rigidbody2D:
   serializedVersion: 4
@@ -5106,7 +5274,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &455424916
 Rigidbody2D:
   serializedVersion: 4
@@ -5243,7 +5417,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &456250882
 Rigidbody2D:
   serializedVersion: 4
@@ -5503,7 +5683,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &488950298
 Rigidbody2D:
   serializedVersion: 4
@@ -5640,7 +5826,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &496032296
 Rigidbody2D:
   serializedVersion: 4
@@ -5922,7 +6114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &544139321
 Rigidbody2D:
   serializedVersion: 4
@@ -6090,7 +6288,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &558105538
 Rigidbody2D:
   serializedVersion: 4
@@ -6227,7 +6431,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &570745614
 Rigidbody2D:
   serializedVersion: 4
@@ -6364,7 +6574,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &575601129
 Rigidbody2D:
   serializedVersion: 4
@@ -6576,7 +6792,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &588666853
 Rigidbody2D:
   serializedVersion: 4
@@ -6713,7 +6935,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &589049364
 Rigidbody2D:
   serializedVersion: 4
@@ -6819,7 +7047,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &595840889
 Rigidbody2D:
   serializedVersion: 4
@@ -6987,7 +7221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &610162465
 Rigidbody2D:
   serializedVersion: 4
@@ -7124,7 +7364,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &625014556
 Rigidbody2D:
   serializedVersion: 4
@@ -7261,7 +7507,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &636011126
 Rigidbody2D:
   serializedVersion: 4
@@ -7526,7 +7778,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &639161333
 Rigidbody2D:
   serializedVersion: 4
@@ -7739,7 +7997,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &649743096
 Rigidbody2D:
   serializedVersion: 4
@@ -8136,7 +8400,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &662474880
 Rigidbody2D:
   serializedVersion: 4
@@ -8273,7 +8543,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &673593548
 Rigidbody2D:
   serializedVersion: 4
@@ -8410,7 +8686,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &678422629
 Rigidbody2D:
   serializedVersion: 4
@@ -8547,7 +8829,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &679309983
 Rigidbody2D:
   serializedVersion: 4
@@ -8684,7 +8972,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &684998110
 Rigidbody2D:
   serializedVersion: 4
@@ -8790,7 +9084,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &709165737
 Rigidbody2D:
   serializedVersion: 4
@@ -9003,7 +9303,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &740982921
 Rigidbody2D:
   serializedVersion: 4
@@ -9171,7 +9477,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &742303552
 Rigidbody2D:
   serializedVersion: 4
@@ -9834,7 +10146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &795224331
 Rigidbody2D:
   serializedVersion: 4
@@ -9971,7 +10289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &812751716
 Rigidbody2D:
   serializedVersion: 4
@@ -10345,7 +10669,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &829788373
 Rigidbody2D:
   serializedVersion: 4
@@ -10482,7 +10812,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &856352558
 Rigidbody2D:
   serializedVersion: 4
@@ -10619,7 +10955,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &861136322
 Rigidbody2D:
   serializedVersion: 4
@@ -10756,7 +11098,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &862530893
 Rigidbody2D:
   serializedVersion: 4
@@ -10869,6 +11217,7 @@ MonoBehaviour:
   healthUI: {fileID: 655400701}
   holdItemUI: {fileID: 761965694}
   musicBox: {fileID: 637544887}
+  chargeUI: {fileID: 821097835}
 --- !u!81 &862583093
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11033,7 +11382,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &880284946
 Rigidbody2D:
   serializedVersion: 4
@@ -11170,7 +11525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &887892298
 Rigidbody2D:
   serializedVersion: 4
@@ -11307,7 +11668,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &894103093
 Rigidbody2D:
   serializedVersion: 4
@@ -11444,7 +11811,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &906430614
 Rigidbody2D:
   serializedVersion: 4
@@ -11581,7 +11954,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &921380499
 Rigidbody2D:
   serializedVersion: 4
@@ -11761,7 +12140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &926967198
 Rigidbody2D:
   serializedVersion: 4
@@ -11898,7 +12283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &928860198
 Rigidbody2D:
   serializedVersion: 4
@@ -12004,7 +12395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &931296614
 Rigidbody2D:
   serializedVersion: 4
@@ -12329,7 +12726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &954257972
 Rigidbody2D:
   serializedVersion: 4
@@ -12600,7 +13003,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &990286612
 Rigidbody2D:
   serializedVersion: 4
@@ -12737,7 +13146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &996498853
 Rigidbody2D:
   serializedVersion: 4
@@ -12874,7 +13289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1004816924
 Rigidbody2D:
   serializedVersion: 4
@@ -13011,7 +13432,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1010643360
 Rigidbody2D:
   serializedVersion: 4
@@ -13117,7 +13544,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1013830836
 Rigidbody2D:
   serializedVersion: 4
@@ -13290,7 +13723,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1021730894
 Rigidbody2D:
   serializedVersion: 4
@@ -13427,7 +13866,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1029764746
 Rigidbody2D:
   serializedVersion: 4
@@ -13564,7 +14009,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1030638142
 Rigidbody2D:
   serializedVersion: 4
@@ -13701,7 +14152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1061516601
 Rigidbody2D:
   serializedVersion: 4
@@ -13919,7 +14376,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1104770167
 Rigidbody2D:
   serializedVersion: 4
@@ -14025,7 +14488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1133090303
 Rigidbody2D:
   serializedVersion: 4
@@ -14193,7 +14662,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1133875855
 Rigidbody2D:
   serializedVersion: 4
@@ -14428,7 +14903,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1156876072
 Rigidbody2D:
   serializedVersion: 4
@@ -14565,7 +15046,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1156976815
 Rigidbody2D:
   serializedVersion: 4
@@ -14671,7 +15158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1185642586
 Rigidbody2D:
   serializedVersion: 4
@@ -14839,7 +15332,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1186391412
 Rigidbody2D:
   serializedVersion: 4
@@ -15136,7 +15635,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1211805765
 Rigidbody2D:
   serializedVersion: 4
@@ -15353,7 +15858,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1227380455
 Rigidbody2D:
   serializedVersion: 4
@@ -15490,7 +16001,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1232468167
 Rigidbody2D:
   serializedVersion: 4
@@ -15706,7 +16223,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1261087406
 Rigidbody2D:
   serializedVersion: 4
@@ -15843,7 +16366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1261946753
 Rigidbody2D:
   serializedVersion: 4
@@ -15980,7 +16509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1272736596
 Rigidbody2D:
   serializedVersion: 4
@@ -16117,7 +16652,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1278314515
 Rigidbody2D:
   serializedVersion: 4
@@ -16254,7 +16795,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1284979667
 Rigidbody2D:
   serializedVersion: 4
@@ -16391,7 +16938,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1287470692
 Rigidbody2D:
   serializedVersion: 4
@@ -16528,7 +17081,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1290905941
 Rigidbody2D:
   serializedVersion: 4
@@ -16918,6 +17477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakingVelocity: 6
+  enable: 0
 --- !u!114 &1308071873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17126,7 +17686,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1317024156
 Rigidbody2D:
   serializedVersion: 4
@@ -17263,7 +17829,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1323267390
 Rigidbody2D:
   serializedVersion: 4
@@ -17476,7 +18048,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1349469179
 Rigidbody2D:
   serializedVersion: 4
@@ -17722,7 +18300,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1355471077
 Rigidbody2D:
   serializedVersion: 4
@@ -17859,7 +18443,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1366940205
 Rigidbody2D:
   serializedVersion: 4
@@ -17996,7 +18586,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1368428219
 Rigidbody2D:
   serializedVersion: 4
@@ -18265,7 +18861,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1401225073
 Rigidbody2D:
   serializedVersion: 4
@@ -18514,7 +19116,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1427894648
 Rigidbody2D:
   serializedVersion: 4
@@ -18651,7 +19259,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1430876511
 Rigidbody2D:
   serializedVersion: 4
@@ -18788,7 +19402,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1434295700
 Rigidbody2D:
   serializedVersion: 4
@@ -19040,7 +19660,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1450201276
 Rigidbody2D:
   serializedVersion: 4
@@ -19306,7 +19932,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1496210056
 Rigidbody2D:
   serializedVersion: 4
@@ -19474,7 +20106,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1498074104
 Rigidbody2D:
   serializedVersion: 4
@@ -19611,7 +20249,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1500109058
 Rigidbody2D:
   serializedVersion: 4
@@ -19748,7 +20392,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1501676799
 Rigidbody2D:
   serializedVersion: 4
@@ -19885,7 +20535,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1512969203
 Rigidbody2D:
   serializedVersion: 4
@@ -20022,7 +20678,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1517034048
 Rigidbody2D:
   serializedVersion: 4
@@ -20159,7 +20821,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1519796924
 Rigidbody2D:
   serializedVersion: 4
@@ -20296,7 +20964,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1526893167
 Rigidbody2D:
   serializedVersion: 4
@@ -20433,7 +21107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1530128485
 Rigidbody2D:
   serializedVersion: 4
@@ -20570,7 +21250,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1530800509
 Rigidbody2D:
   serializedVersion: 4
@@ -20707,7 +21393,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1535422757
 Rigidbody2D:
   serializedVersion: 4
@@ -20925,7 +21617,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1544568993
 Rigidbody2D:
   serializedVersion: 4
@@ -21062,7 +21760,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1563493025
 Rigidbody2D:
   serializedVersion: 4
@@ -21199,7 +21903,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1568953546
 Rigidbody2D:
   serializedVersion: 4
@@ -21546,7 +22256,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1599242795
 Rigidbody2D:
   serializedVersion: 4
@@ -21683,7 +22399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1603379431
 Rigidbody2D:
   serializedVersion: 4
@@ -21900,7 +22622,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1613699569
 Rigidbody2D:
   serializedVersion: 4
@@ -22037,7 +22765,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1621767672
 Rigidbody2D:
   serializedVersion: 4
@@ -22174,7 +22908,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1628257450
 Rigidbody2D:
   serializedVersion: 4
@@ -22391,7 +23131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1648069769
 Rigidbody2D:
   serializedVersion: 4
@@ -22608,7 +23354,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1668453448
 Rigidbody2D:
   serializedVersion: 4
@@ -22745,7 +23497,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1669651301
 Rigidbody2D:
   serializedVersion: 4
@@ -22882,7 +23640,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1681001498
 Rigidbody2D:
   serializedVersion: 4
@@ -23019,7 +23783,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1681003310
 Rigidbody2D:
   serializedVersion: 4
@@ -23314,7 +24084,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1713297564
 Rigidbody2D:
   serializedVersion: 4
@@ -23451,7 +24227,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1714960725
 Rigidbody2D:
   serializedVersion: 4
@@ -23588,7 +24370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1736895851
 Rigidbody2D:
   serializedVersion: 4
@@ -23694,7 +24482,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1766286304
 Rigidbody2D:
   serializedVersion: 4
@@ -23862,7 +24656,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1766521735
 Rigidbody2D:
   serializedVersion: 4
@@ -24048,7 +24848,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1815987483
 Rigidbody2D:
   serializedVersion: 4
@@ -24185,7 +24991,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1832697472
 Rigidbody2D:
   serializedVersion: 4
@@ -24456,7 +25268,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1838168034
 Rigidbody2D:
   serializedVersion: 4
@@ -24562,7 +25380,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1845162083
 Rigidbody2D:
   serializedVersion: 4
@@ -24859,7 +25683,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1864931141
 Rigidbody2D:
   serializedVersion: 4
@@ -25027,7 +25857,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1888794946
 Rigidbody2D:
   serializedVersion: 4
@@ -25164,7 +26000,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1891771698
 Rigidbody2D:
   serializedVersion: 4
@@ -25301,7 +26143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1898744603
 Rigidbody2D:
   serializedVersion: 4
@@ -25438,7 +26286,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1899128634
 Rigidbody2D:
   serializedVersion: 4
@@ -25575,7 +26429,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1906807093
 Rigidbody2D:
   serializedVersion: 4
@@ -25791,7 +26651,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1918688014
 Rigidbody2D:
   serializedVersion: 4
@@ -26175,7 +27041,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1936833764
 Rigidbody2D:
   serializedVersion: 4
@@ -26281,7 +27153,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1957936298
 Rigidbody2D:
   serializedVersion: 4
@@ -26449,7 +27327,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1961062711
 Rigidbody2D:
   serializedVersion: 4
@@ -26665,7 +27549,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1969373219
 Rigidbody2D:
   serializedVersion: 4
@@ -26802,7 +27692,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1981035689
 Rigidbody2D:
   serializedVersion: 4
@@ -26939,7 +27835,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &1995704203
 Rigidbody2D:
   serializedVersion: 4
@@ -27205,7 +28107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2006947318
 Rigidbody2D:
   serializedVersion: 4
@@ -27347,7 +28255,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2024371151
 Rigidbody2D:
   serializedVersion: 4
@@ -27453,7 +28367,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2025711829
 Rigidbody2D:
   serializedVersion: 4
@@ -27621,7 +28541,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2032623921
 Rigidbody2D:
   serializedVersion: 4
@@ -27758,7 +28684,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2046975146
 Rigidbody2D:
   serializedVersion: 4
@@ -27895,7 +28827,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2057327879
 Rigidbody2D:
   serializedVersion: 4
@@ -28032,7 +28970,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2060100813
 Rigidbody2D:
   serializedVersion: 4
@@ -28169,7 +29113,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2067702730
 Rigidbody2D:
   serializedVersion: 4
@@ -28466,7 +29416,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2099196447
 Rigidbody2D:
   serializedVersion: 4
@@ -28603,7 +29559,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2100964534
 Rigidbody2D:
   serializedVersion: 4
@@ -28740,7 +29702,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275464654f45b9f4b992d979f9304bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
+  maxForce: 5
+  minForce: 1
+  maxSize: 2
+  minSize: 0.8
 --- !u!50 &2103763451
 Rigidbody2D:
   serializedVersion: 4

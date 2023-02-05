@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float maxDistance = 10;
-    float currentDistance = 0;
     public float hookFlyingSpeed = 8.0f;    // hook's speed of shooting
     public float hookReturningSpeed = 8.0f; // hook's speed of returning back to the player
     public float hookShrinkingSpeed = 8.0f; // hook's speed of shrinking when hooked to a target
