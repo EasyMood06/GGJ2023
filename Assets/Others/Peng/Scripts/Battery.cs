@@ -10,6 +10,8 @@ public class Battery : Item
     {
         base.OnGet();
         playerController.GetComponent<PlayerCharge>().maxCharge += maxChargeChange;
+        playerController.GetComponent<PlayerCharge>().isFull = false;
+        playerController.GetComponent<PlayerCharge>().UpdateUI();
     }
 
     public override void OnEquip()

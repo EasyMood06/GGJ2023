@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     SpaceRock[] rocks;
     SpaceRock targetRock;
     SpringJoint2D springJoint2D;
+    float ELaunchCD = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,14 @@ public class PlayerController : MonoBehaviour
             if (!launchable)
             {
                 ShootLogicUpdate();
+                if(ELaunchCD <= 0)
+                {
+                    ElectricLaunch();
+                }
+                else
+                {
+                    ELaunchCD -= Time.deltaTime;
+                }
             }
             else
             {
@@ -89,6 +98,22 @@ public class PlayerController : MonoBehaviour
             targetUnitDirection = Vector3.Normalize(targetPosition - transform.position);
             gameObject.GetComponent<Rigidbody2D>().velocity = targetUnitDirection * launchVelocity;
             launchable = false;
+        }
+        return;
+    }
+
+    void ElectricLaunch()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)&&GetComponent<PlayerCharge>().currentCharge >= 1)
+        {
+            // print("Launching once");
+            // record target position
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            targetPosition = new Vector3(worldPosition.x, worldPosition.y, 0);
+            targetUnitDirection = Vector3.Normalize(targetPosition - transform.position);
+            gameObject.GetComponent<Rigidbody2D>().velocity = targetUnitDirection * launchVelocity;
+            GetComponent<PlayerCharge>().CostCharge(1);
+            ELaunchCD = 0.2f;
         }
         return;
     }
