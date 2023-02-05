@@ -10,7 +10,8 @@ public class CameraFollowing : MonoBehaviour
     Rigidbody2D playerRb2D;
     Camera mainCamera;
     bool isGameEnded;
-    float finalCameraOrthoSize = 100.0f;
+    float finalCameraOrthoSize = 200.0f;
+    float rotationVelocity = 5f;
     public GameObject startObject;
     public GameObject endObject;
     public GameObject titleText;
@@ -28,7 +29,7 @@ public class CameraFollowing : MonoBehaviour
         playerRb2D = player.GetComponent<Rigidbody2D>();
         mainCamera = GetComponent<Camera>();
         isGameEnded = false;
-        //EndGame();
+        EndGame();
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class CameraFollowing : MonoBehaviour
             float estimatedTime = (finalCameraOrthoSize - 10) / zoomCoefficient;
             Vector3 startPosition = new Vector3(startObject.transform.position.x, startObject.transform.position.y, transform.position.z);
             UpdateFinalCameraPosition(startPosition, estimatedTime);
+            transform.Rotate(new Vector3(0, 0, rotationVelocity * Time.deltaTime));
             return;
         }
         // follow player
