@@ -27,7 +27,7 @@ public class CameraFollowing : MonoBehaviour
         playerRb2D = player.GetComponent<Rigidbody2D>();
         mainCamera = GetComponent<Camera>();
         isGameEnded = false;
-        // EndGame();
+        //EndGame();
     }
 
     // Update is called once per frame
@@ -95,5 +95,11 @@ public class CameraFollowing : MonoBehaviour
         holdItemUI.SetActive(false);
         player.isControlable = false;
         isGameEnded = true;
+        foreach(Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
+
     }
 }

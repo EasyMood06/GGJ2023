@@ -8,7 +8,7 @@ public class RockBreaker : Item
     public override void OnGet()
     {
         base.OnGet();
-        GameObject.Find("Player").GetComponent<BreakRock>().enabled = true;
+        GameObject.Find("Player").GetComponent<BreakRock>().enable = true;
     }
 
     public override void OnEquip()
