@@ -140,8 +140,8 @@ MonoBehaviour:
   spriteArray: []
   spriteRenderer: {fileID: 0}
   distanceForInitialization: 50
-  maxForce: 3
-  minForce: 2
+  maxForce: 10
+  minForce: 5
   maxSize: 1.5
   minSize: 0.8
 --- !u!114 &-4883853252821355991
