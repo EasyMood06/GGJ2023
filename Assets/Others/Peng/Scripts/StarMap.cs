@@ -7,7 +7,7 @@ public class StarMap: Item
     public override void OnGet()
     {
         base.OnGet();
-        GameObject.Find("ArrowPicture").GetComponent<ArrowShowing>().enable = true;
+        GameObject.Find("Main Camera").GetComponentInChildren<ArrowShowing>().enable = true;
     }
 
     public override void OnEquip()
