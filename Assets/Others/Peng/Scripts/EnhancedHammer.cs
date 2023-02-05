@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnhancedHammer : Item
 {
-    public float HookFlyingSpeedChange = 10;
+    public float HookFlyingSpeedChange = 5;
     public override void OnGet()
     {
         base.OnGet();

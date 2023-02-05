@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnhancedWinch:Item
 {
-    public float hookReturningSpeedChange = 10;
+    public float hookReturningSpeedChange = 5;
     public override void OnGet()
     {
         base.OnGet();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExtraRope : Item
 {
-    public float maxDistanceChange = 5;
+    public float maxDistanceChange = 2;
     public override void OnGet()
     {
         base.OnGet();
