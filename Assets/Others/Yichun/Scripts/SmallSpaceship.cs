@@ -24,6 +24,8 @@ public class SmallSpaceship : MonoBehaviour
     bool isFinded;
     SpaceLines spaceLines;
     private Rigidbody2D playerRB;
+    [SerializeField] bool isTheLastSpaceShip;
+    CameraFollowing cameraFollowing;
     private void Start()
     {
         isInSpaceship = false;
@@ -33,6 +35,7 @@ public class SmallSpaceship : MonoBehaviour
         spaceshipManager = FindObjectOfType<SpaceshipManager>();
         uiManager = FindObjectOfType<UIManager>();
         spaceLines = FindObjectOfType<SpaceLines>();
+        cameraFollowing = FindObjectOfType<CameraFollowing>();
 
         if(spaceshipManager) //�����ȡ��Ʒ���÷ɴ���
         {
@@ -40,7 +43,6 @@ public class SmallSpaceship : MonoBehaviour
             spaceshipManager.RandomSpawnItems(item2Level, 1, this);
             spaceshipManager.RandomSpawnItems(item3Level, 2, this);
             Debug.LogError("Complete spaceship item random spawn");
-            
         }
     }
 
@@ -66,6 +68,12 @@ public class SmallSpaceship : MonoBehaviour
                 isFinded = true;
                 // tell space line that there is a new spaceship be finded, send the transform
                 spaceLines.SendNewFindSpaceShipPosition(transform.position);
+                if(isTheLastSpaceShip)
+                {
+                    // endGame
+                    cameraFollowing.EndGame();
+                    return;
+                }
             }
         }
         if (isInSpaceship) return; //ÿ�ν���ֻ����һ�β˵�
