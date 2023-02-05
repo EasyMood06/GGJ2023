@@ -9,7 +9,7 @@ public class CameraFollowing : MonoBehaviour
     PlayerController player;
     Rigidbody2D playerRb2D;
     Camera mainCamera;
-    bool isGameEnded;
+    public bool isGameEnded;
     float finalCameraOrthoSize = 200.0f;
     float rotationVelocity = 5f;
     public GameObject startObject;
@@ -89,6 +89,7 @@ public class CameraFollowing : MonoBehaviour
         transform.position = Vector3.Lerp(startPosition, endPosition, t);
         // show the title
         titleText.GetComponent<TMPro.TextMeshProUGUI>().color = new Color(151/255,1,1,t);
+        titleText.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = new Color(151/255,1,1,t);
     }
 
     public void EndGame()
