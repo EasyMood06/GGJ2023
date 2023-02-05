@@ -16,7 +16,7 @@ public class AlphaChange : MonoBehaviour
     {
         float alpha = 0.1f;
         alpha = (1 - Player.transform.position.magnitude / 150) * alpha;
-        Debug.Log(alpha);
+        //Debug.Log(alpha);
         if (alpha < 0) alpha = 0;
         Color color = gameObject.GetComponent<SpriteRenderer>().color;
         gameObject.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, alpha);
